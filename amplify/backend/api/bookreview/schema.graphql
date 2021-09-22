@@ -1,0 +1,11 @@
+type Post @model {
+  id: ID!
+  name: String!
+  description: String
+  url: String!
+  image: String!
+  star: Int!
+  category: String!
+  date: String!
+  writer: String!
+}

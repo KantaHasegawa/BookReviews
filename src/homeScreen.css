@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Noto+Serif+JP:wght@200&display=swap');
+
+.card{
+  width: auto;
+  margin: 5rem auto;
+
+}
+.card img{
+  width: 8rem;
+  margin: 1rem;
+}
+
+.card p{
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.image-container{
+  display: flex;
+}
+
+.title-review h1{
+  padding: 1rem;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+
