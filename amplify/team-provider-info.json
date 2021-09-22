@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bookreview-dev-104605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::837529539439:role/amplify-bookreview-dev-104605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::837529539439:role/amplify-bookreview-dev-104605-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-bookreview-dev-104605-deployment",
+      "UnauthRoleName": "amplify-bookreview-dev-104605-unauthRole",
+      "StackName": "amplify-bookreview-dev-104605",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:837529539439:stack/amplify-bookreview-dev-104605/ddd0ebc0-1b46-11ec-9ca4-0e9105d7f1cd",
+      "AmplifyAppId": "d1uwvo0atyid4g"
+    }
+  }
+}
