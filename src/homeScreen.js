@@ -31,9 +31,13 @@ const HomeScreen = () => {
       {posts.map((post, index) => (
         <div class="card" key={post.id ? post.id : index}>
           <div class="image-container">
-            <img src={post.image} alt="" />
+            <a href={post.url}>
+              <img className="book-image" src={post.image} alt="" />
+            </a>
             <div class="title-review">
-              <h1>{post.name}</h1>
+              <a href={post.url} className="post-name">
+                <h1>{post.name}</h1>
+              </a>
               <p>著者: {post.writer} </p>
               <Rating rating={post.star} />
             </div>

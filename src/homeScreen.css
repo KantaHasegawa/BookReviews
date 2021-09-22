@@ -19,9 +19,27 @@
   display: flex;
 }
 
-.title-review h1{
-  padding: 1rem;
-  font-family: 'Kaisei HarunoUmi', serif;
+
+
+.book-image{
+  transition: transform 450ms;
 }
 
+.book-image:hover{
+  transform: scale(1.08);
+}
 
+.post-name{
+  text-decoration: none;
+}
+
+.post-name h1{
+  padding: 1rem;
+  font-family: 'Kaisei HarunoUmi', serif;
+  transition: transform 450ms;
+  color: black;
+}
+
+.post-name h1:hover{
+  transform: scale(1.08);
+}

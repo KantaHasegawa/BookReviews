@@ -1,6 +1,28 @@
 .fa-star{
   color: #FFA41C;
+  transition: transform 450ms;
 }
+
+.fa-star-o{
+  transition: transform 450ms;
+}
+
+.fa-star-half-o{
+  transition: transform 450ms;
+}
+
+.fa-star:hover{
+  transform: scale(1.5);
+}
+
+.fa-star-o:hover{
+  transform: scale(1.5);
+}
+
+.fa-star-half-o:hover{
+  transform: scale(1.5);
+}
+
 
 .rating{
   margin-left: 1rem;
