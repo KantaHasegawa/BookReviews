@@ -44,7 +44,7 @@ const HomeScreen = () => {
           </div>
           <p>ジャンル: {post.category}</p>
           <p>
-            読了日: {post.date.substr(0, 4)}/{post.date.substr(4, 2)}/
+            読み終わった日: {post.date.substr(0, 4)}/{post.date.substr(4, 2)}/
             {post.date.substr(6, 2)}
           </p>
           <p>概要</p>

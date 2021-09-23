@@ -10,6 +10,11 @@
       "StackName": "amplify-bookreview-dev-104605",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:837529539439:stack/amplify-bookreview-dev-104605/ddd0ebc0-1b46-11ec-9ca4-0e9105d7f1cd",
       "AmplifyAppId": "d1uwvo0atyid4g"
+    },
+    "categories": {
+      "auth": {
+        "bookreview42b8ab57": {}
+      }
     }
   }
 }
