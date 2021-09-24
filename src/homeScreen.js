@@ -1,6 +1,8 @@
 /* src/App.js */
 import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
+import { Link } from "react-router-dom";
+import { Auth } from "aws-amplify";
 import { listPosts } from './graphql/queries'
 import awsExports from "./aws-exports";
 import Rating from "./components/Rating";
@@ -22,7 +24,7 @@ const HomeScreen = () => {
       const postData = await API.graphql(graphqlOperation(listPosts))
       const posts = postData.data.listPosts.items
       setPosts(posts)
-    } catch (err) { console.log('error fetching todos') }
+    } catch (err) { console.log('error fetching posts') }
   }
 
 
@@ -35,9 +37,20 @@ const HomeScreen = () => {
               <img className="book-image" src={post.image} alt="" />
             </a>
             <div class="title-review">
-              <a href={post.url} className="post-name">
-                <h1>{post.name}</h1>
-              </a>
+              {Auth.currentSession ? (
+                <Link
+                  to={`/edit/${post.id}`}
+                  Style="text-decoration: none;"
+                  className="post-name"
+                  params={{ data: post }}
+                >
+                  <h1>{post.name}</h1>
+                </Link>
+              ) : (
+                <a href={post.url} className="post-name">
+                  <h1>{post.name}</h1>
+                </a>
+              )}
               <p>著者: {post.writer} </p>
               <Rating rating={post.star} />
             </div>

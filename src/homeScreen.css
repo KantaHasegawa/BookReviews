@@ -43,3 +43,7 @@
 .post-name h1:hover{
   transform: scale(1.08);
 }
+
+h1{
+  color: black;
+}

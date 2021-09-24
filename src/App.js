@@ -7,7 +7,7 @@ import { Container, Navbar, Row, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "./App.css"
-
+import EditScreen from "./EditScreen";
 
 const App = () => {
   return (
@@ -44,6 +44,7 @@ const App = () => {
                 <Routes>
                   <Route path="/" element={<HomeScreen />}></Route>
                   <Route path="/new" element={<NewScreen />}></Route>
+                  <Route path="/edit/:id" element={<EditScreen />}></Route>
                 </Routes>
               </Row>
             </main>
