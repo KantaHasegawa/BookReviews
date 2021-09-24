@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./homeScreen";
-import EditScreen from "./editScreen";
+import NewScreen from "./newScreen";
 import { Container, Navbar, Row, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
@@ -25,7 +25,7 @@ const App = () => {
             </Navbar.Brand>
             <Nav className="justify-content-end" activeKey="/home">
               <Nav.Item>
-                <Nav.Link href="/edit">管理者用リンク</Nav.Link>
+                <Nav.Link href="/new">管理者用リンク</Nav.Link>
               </Nav.Item>
             </Nav>
           </Container>
@@ -36,7 +36,7 @@ const App = () => {
               <Row>
                 <Routes>
                   <Route path="/" element={<HomeScreen />}></Route>
-                  <Route path="/edit" element={<EditScreen />}></Route>
+                  <Route path="/new" element={<NewScreen />}></Route>
                 </Routes>
               </Row>
             </main>
