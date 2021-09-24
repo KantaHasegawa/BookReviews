@@ -11,17 +11,6 @@ const NewScreen = () => {
   const { control, handleSubmit } = useForm();
 
   const onSubmit = async (data) => {
-      // const post = {
-      //   name: data.name,
-      //   writer: data.writer,
-      //   category: data.category,
-      //   date: data.date,
-      //   url: data.url,
-      //   image: data.image,
-      //   description: data.description,
-      //   star: data.star
-      // }
-      // console.log(post)
     try {
       await API.graphql(graphqlOperation(createPost, { input: data }));
       console.log("success!!!")

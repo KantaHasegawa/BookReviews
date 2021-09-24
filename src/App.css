@@ -39,3 +39,11 @@
   }
 }
 
+.navbar-brand{
+  text-decoration: none;
+}
+
+.nav-brand{
+  color: white;
+}
+
